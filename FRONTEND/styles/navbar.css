@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'luchador-oblique';
+    src: url(../Font/luchador-oblique.ttf);
+}
+
+@font-face {
+    font-family: 'luchador-regular';
+    src: url(../Font/Luchador-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -2px;
+}
+
+nav>div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.order_now_button {
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    background-color: red;
+    border: none;
+    color: white;
+    font-family: 'luchador-regular';
+    font-weight: bold;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+
+}
+
+.order_now_button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.barbecue-logo-upper-text {
+    font-weight: bolder;
+    margin-bottom: -16px;
+    font-family: 'Righteous', cursive;
+    margin-left: 4px;
+    font-size: 1rem;
+}
+
+.barbecue-logo-lower-text {
+    color: red;
+    margin-top: -9px;
+    font-size: 9px;
+    margin-left: 11px;
+    font-weight: bolder;
+    font-family: 'Righteous', cursive;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border-radius: 5px;
+    width: 5.5rem;
+}
+
+.icon {
+    margin-left: 12rem;
+    margin-top: -1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .order_now_button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .icon {
+        margin-left: 8rem;
+        margin-top: -1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .order_now_button {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    .icon {
+        margin-left: 5rem;
+        margin-top: -0.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .order_now_button {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    .icon {
+        margin-left: 4rem;
+        margin-top: -0.5rem;
+    }
+
+}
