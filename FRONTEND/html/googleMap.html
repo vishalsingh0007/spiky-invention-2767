@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <style>
+        .google-map {
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        .google-map>:first-child {
+            width: 40%;
+        }
+
+        hr {
+            height: 4px;
+            margin-top: 15px;
+            background-color: black;
+            border-radius: 5px;
+            width: 6.5rem;
+            margin-left: 0.1rem;
+        }
+
+
+        .google-map>:first-child>:first-child {
+            border: 2px solid grey;
+            width: 90%;
+            margin-left: 1.4rem;
+            display: flex;
+            /* gap: 1rem; */
+            align-items: center;
+            border-radius: 50px;
+            margin-top: 2rem;
+        }
+
+        .google-map>:first-child>:first-child>input {
+            padding: 1rem 1rem;
+            font-size: 20px;
+            width: 90%;
+            border-radius: 50px;
+            border: none;
+        }
+
+        .google-map>:last-child {
+            width: 70%;
+        }
+
+        @media(max-width: 767px) {
+            .google-map {
+                display: flex;
+                flex-direction: column;
+
+                /* justify-content: space-between; */
+            }
+
+            .google-map>:first-child {
+                width: 80%;
+                margin: 1rem;
+                margin-bottom: 2rem;
+                /* height: 200px; */
+            }
+
+            .google-map-link {
+                width: 140%;
+            }
+
+            .google-map>:first-child>:first-child>input {
+                padding: 1rem 1rem 1rem 1rem;
+                width: 90%;
+                font-size: 20px;
+                border-radius: 50px;
+                border: none;
+            }
+
+            .google-map>:first-child>:first-child {
+                border: 2px solid grey;
+                width: 100%;
+                margin-left: 2.5rem;
+                display: flex;
+                /* gap: 1rem; */
+                align-items: center;
+                border-radius: 50px;
+                margin-top: 2rem;
+            }
+        }
+
+        @media(max-width: 574px) {}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div><i style="color: red; font-size: 2rem; padding-left: 1.5rem;" class="fa-solid fa-bars"></i></div>
+        <div class="icon">
+            <div class="barbecue-logo-upper-text">
+                <p class="barbecue-logo-upper-text-para">BARBECUE</p>
+            </div>
+            <hr>
+            <div class="barbecue-logo-lower-text">
+                <p class="barbecue-logo-upper-text-para">SMOKE & GRILL</p>
+            </div>
+        </div>
+        <div>
+            <div><i style="color: red; font-size: 2rem;" class="fa-solid fa-location-pin"></i></div>
+            <div><button class="order_now_button">ORDER NOW</button></div>
+        </div>
+    </nav>
+    <div class="google-map">
+        <div>
+            <div>
+                <input type="text" placeholder="Enter city, address or zip">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div>
+            <iframe class="google-map-link"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63262586.82408997!2d53.557213000000026!3d14.585289000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8163d5986f5%3A0x7beae11011fcf5c5!2sEl%20Pollo%20Loco!5e0!3m2!1sen!2sin!4v1674228159951!5m2!1sen!2sin"
+                width="1200" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Fundraisers & Charities</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">Franchising</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Join Loco Rewards</h2>
+                    <p>
+                        Earn points with every order, receive a birthday reward and other valuable offers throughout the
+                        year. Plus, special app features to order ahead, pay, and save your favorites.
+                    </p>
+                    <a href="#">Learn More</a>
+                    <div class="download-logo">
+                        <div><img src="https://www.elpolloloco.com/content/img/download-button-app-store.webp" alt="">
+                        </div>
+                        <div><img src="https://www.elpolloloco.com/content/img/download-button-google.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-col-upper">
+                <!-- <div class="footer-col"> -->
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div>
+                    <span> <a href="#">Nutrition Guide </a> <span>|</span> <a href="#">Nutrition Guide
+                        </a> <span>|</span><a href="#">Nutrition
+                            Guide </a> <span>|</span> <a href="#"> Site Map </a> <span>|</span> Nutrition Guide
+                        <span>|</span> © El
+                        Pollo Loco. All
+                        Rights
+                        Reserved </span>
+                </div>
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
