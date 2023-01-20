@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'luchador-oblique';
+    src: url(../Font/Luchador-Oblique.ttf);
+}
+
+@font-face {
+    font-family: 'luchador-regular';
+    src: url(../Font/Luchador-Regular.ttf);
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.navigation-bar>:last-child {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.navigation-bar>:last-child>:first-child {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.icon {
+    margin-left: 12rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.top-input-div,
+.with-icon,
+.below-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.with-icon p,
+i,
+input[type="text"],
+select {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.with-icon {
+    width: 22%;
+}
+
+input[type="text"],
+select,
+option {
+    padding: 0.5rem 2rem;
+    border: none;
+}
+
+.top-input-div>div {
+    border: 1px solid grey;
+}
+
+.top-input-div {
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.dhoom {
+    padding: 0.6rem 7.5rem;
+    border: none;
+}
+
+.dhoom2 {
+    padding: 0.6rem 6.5rem;
+}
+
+
+.only-image {
+    width: 110%;
+}
+
+.below-navigation {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.below-navigation>:first-child {
+    width: 100%;
+    text-align: center;
+}
+
+.below-navigation>:first-child>h1 {
+    font-family: 'luchador-regular';
+    color: blue;
+    margin: 1rem;
+}
+
+.signin {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.lower-div>:first-child {
+    display: flex;
+    margin-left: 30rem;
+}
+
+.lower-div>:first-child>img {
+    width: 25%;
+}
+
+.lower-div>:last-child>ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+    list-style: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+@media(max-width: 767px) {
+
+    .below-navigation {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .top-input-div {
+        margin-left: 6rem;
+    }
+
+    .lower-div {
+        display: none;
+    }
+
+    .input[type="text"],
+    select,
+    option {
+        padding: 0.5rem 2rem;
+        border: none;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .below-navigation {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .icon {
+        margin-left: 4rem;
+    }
+
+    .top-input-div {
+        margin-left: 2rem;
+    }
+
+    .lower-div {
+        display: none;
+    }
+
+    #text {
+        padding: 0.6rem 3.4rem;
+        border: none;
+    }
+
+    #fa-solid {
+        display: none;
+    }
+
+}

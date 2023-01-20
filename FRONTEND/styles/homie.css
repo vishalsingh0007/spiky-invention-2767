@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'luchador-oblique';
+    src: url(../Font/Luchador-Oblique.ttf);
+}
+
+@font-face {
+    font-family: 'luchador-regular';
+    src: url(../Font/Luchador-Regular.ttf);
+}
+
+#img-cover {
+    height: 150vh;
+}
+
+.one {
+    position: absolute;
+    top: 34%;
+    width: 30%;
+    line-height: 1.8rem;
+    left: 10%;
+    text-align: center;
+}
+
+.la-blue p {
+    /* line-height: 1.8rem; */
+    left: 5rem;
+    color: #00269a;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.one a {
+    top: 15rem;
+    line-height: 1.8rem;
+    left: 5rem;
+    background-color: #00269a;
+    text-align: center;
+    border-radius: 5%;
+    color: white;
+    text-decoration: none;
+    margin: 2rem;
+    font-family: 'luchador-oblique';
+    padding: 1rem 2rem;
+}
+
+.one h1 {
+    font-family: 'luchador-regular';
+    font-size: 4rem;
+    margin: -0.8rem;
+    color: #00269a;
+}
+
+.one h2 {
+    color: #00269a;
+    font-family: 'luchador-oblique';
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.cover-image {
+    width: 100%;
+    position: relative;
+}
+
+.cover-image img {
+    width: 100%;
+}
+
+.main-div {
+    width: 100%;
+}
+
+.inner-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.onee {
+    font-size: 3rem;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+}
+
+.onee h1 {
+    font-family: 'luchador-regular';
+    margin: 0.5rem;
+    color: #00269a;
+}
+
+.onee p {
+    font-size: 1.2rem;
+    margin-bottom: -0.2rem;
+}
+
+.onee a {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background-color: #00269a;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.two {
+    font-size: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    text-align: center;
+}
+
+.two h1,
+.below-ke-inner-text h1 {
+    font-family: 'luchador-regular';
+    margin: 0.5rem;
+    color: #00269a;
+}
+
+.two p,
+.below-ke-inner-text p {
+    font-size: 1.2rem;
+    margin-bottom: -0.2rem;
+}
+
+.two a {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background-color: #00269a;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+.below-cover-image {
+    width: 100%;
+    position: relative;
+}
+
+.below-cover-image img {
+    width: 100%;
+}
+
+.below-inner-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.below-inner-text a {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background-color: #00269a;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.below-inner-text p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.below-ke-cover-image {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 15rem; */
+    align-items: center;
+}
+
+.below-ke-inner-text {
+    padding-left: 4rem;
+}
+
+.below-ke-inner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.below-ke-inner-text a {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background-color: #00269a;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+@media(max-width: 767px) {
+    .carousel {
+        /* visibility: hidden; */
+        display: none;
+
+    }
+
+    .main-div {
+        width: 100%;
+    }
+
+    .cover-image {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .onee {
+        /* font-size: 1rem; */
+        position: relative;
+        /* top: 40%; */
+        left: 2%;
+        text-align: center;
+    }
+
+    .onee h1 {
+        font-family: 'luchador-regular';
+        margin: 0.5rem;
+        color: #00269a;
+    }
+
+    .onee p {
+        font-size: 0.8rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .onee a {
+        font-size: 0.7rem;
+        padding: 1rem 2rem;
+        background-color: #00269a;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .two {
+        /* font-size: 3rem; */
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        text-align: center;
+    }
+
+    .two h1,
+    .below-ke-inner-text h1 {
+        font-family: 'luchador-regular';
+        margin: 1rem;
+        font-size: 1.5rem;
+        color: #00269a;
+    }
+
+    .two p,
+    .below-ke-inner-text p {
+        font-size: 0.8rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .two a {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        background-color: #00269a;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+
+    .below-cover-image {
+        width: 100%;
+        position: relative;
+    }
+
+    .below-cover-image img {
+        width: 100%;
+    }
+
+    .below-inner-text {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+    .below-inner-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .below-inner-text a {
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
+        background-color: #00269a;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+
+    .below-inner-text p {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .below-ke-cover-image {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 15rem; */
+        align-items: center;
+    }
+
+    .below-ke-cover-image img {
+        width: 100%;
+    }
+
+    .below-ke-cover-image h1 {
+        font-size: 1.2rem;
+    }
+
+    .below-ke-inner-text {
+        padding-left: 2rem;
+    }
+
+    .below-ke-inner-text p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .below-ke-inner-text a {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        background-color: #00269a;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+}
+
+@media(max-width: 574px) {
+
+    .main-div {
+        width: 100%;
+    }
+
+    .onee {
+        /* font-size: 2rem; */
+        position: relative;
+        /* top: 40%; */
+        /* left: 35%; */
+        text-align: center;
+    }
+
+    .onee h1 {
+        font-family: 'luchador-regular';
+        margin: 0.5rem;
+        font-size: 2rem;
+        color: #00269a;
+    }
+
+    .onee p {
+        font-size: 1.2rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .onee a {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        background-color: #00269a;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .two {
+        /* font-size: 3rem; */
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        text-align: center;
+    }
+
+    .two h1,
+    .below-ke-inner-text h1 {
+        font-family: 'luchador-regular';
+        margin: 0.5rem;
+        color: #00269a;
+        font-size: 1rem;
+    }
+
+    .two p,
+    .below-ke-inner-text p {
+        font-size: 1rem;
+        margin-bottom: -1.6rem;
+    }
+
+    .two a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #00269a;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+
+    .below-cover-image {
+        width: 100%;
+        position: relative;
+    }
+
+    .below-cover-image img {
+        width: 100%;
+    }
+
+    .below-inner-text {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+    .below-inner-text h1 {
+        /* font-size: 1rem; */
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .below-inner-text a {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        background-color: #00269a;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+
+    .below-inner-text p {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: none;
+    }
+
+    .below-ke-cover-image img {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .below-ke-cover-image {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 15rem; */
+        align-items: center;
+    }
+
+    .below-ke-inner-text {
+        padding-left: 1rem;
+    }
+
+    .below-ke-inner-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .below-ke-inner-text p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .below-ke-inner-text a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #00269a;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+}
