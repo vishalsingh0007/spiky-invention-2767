@@ -29,6 +29,7 @@ login_value.addEventListener("click", async function (event) {
         console.log(data);
         localStorage.setItem('Token', data.token)
         alert(data.Message)
+        window.location.href = 'afterlogin.html'
     }).catch((error) => {
         console.log({ 'error': error })
     })
