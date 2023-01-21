@@ -6,7 +6,6 @@ const jwt = require('jsonwebtoken');
 
 userRouter.get('/', async (req, res) => {
     try {
-
         const data = await userModel.find();
         res.send(data);
     } catch (error) {
