@@ -8,12 +8,118 @@
     src: url(../Font/Luchador-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
+.slider {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: 2rem;
+    background-color: white;
+    transition: 0.5s ease;
+    transform: translateX(-100%);
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: #FA3B20;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    font-family: 'luchador-regular';
+    font-size: 3rem;
+    margin-left: 5rem;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+input {
+    display: none;
+    visibility: hidden;
+    /* -webkit-appearance: none; */
+}
+
+.toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: white;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 25px;
+    background-color: #FA3B20;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked~.toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+input:checked~.toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+
+input:checked~.toggle .middle_line {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+input:checked~.slider {
+    transform: translateX(0);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
+}
+
+/* ================================================= */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 nav {
     display: flex;
@@ -32,7 +138,7 @@ nav>div:last-child {
     padding: 1rem 4rem;
     font-size: 1.3rem;
     font-style: italic;
-    background-color: red;
+    background-color: #FA3B20;
     border: none;
     color: white;
     font-family: 'luchador-regular';
@@ -58,7 +164,7 @@ nav>div:last-child {
 }
 
 .barbecue-logo-lower-text {
-    color: red;
+    color: #FA3B20;
     margin-top: -9px;
     font-size: 9px;
     margin-left: 11px;
@@ -77,7 +183,7 @@ hr {
 
 .icon {
     margin-left: 12rem;
-    margin-top: -1rem;
+    margin-top: 0.5rem;
     text-align: center;
 }
 
@@ -90,6 +196,20 @@ hr {
         padding: 1rem 2rem;
         font-size: 1rem;
     }
+
+    ul li a {
+        color: #FA3B20;
+        font-weight: 500;
+        padding: 5px 0;
+        display: block;
+        text-transform: capitalize;
+        font-family: 'luchador-regular';
+        font-size: 3rem;
+        margin-left: 2rem;
+        text-decoration: none;
+        transition: 0.2s ease-out;
+    }
+
 
     .icon {
         margin-left: 8rem;
