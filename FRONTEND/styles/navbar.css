@@ -163,10 +163,6 @@ nav>div:last-child {
     font-size: 1rem;
 }
 
-nav {
-    z-index: 10;
-}
-
 .barbecue-logo-lower-text {
     color: #FA3B20;
     margin-top: -9px;
