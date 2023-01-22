@@ -12,8 +12,6 @@ userRouter.get('/', async (req, res) => {
         console.log({ 'error': error });
         console.log('Something went wrong');
     }
-
-
 })
 
 userRouter.post('/register', async (req, res) => {

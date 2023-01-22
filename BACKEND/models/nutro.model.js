@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const nutroschema = mongoose.Schema({
     Serving_size: Number,
-    Calories: Number,
+    category: String,
     Calories_from_fat: Number,
     Total_fat: Number,
     Saturated_fat: Number,
