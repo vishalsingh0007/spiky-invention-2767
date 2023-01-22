@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/adminPanel.css"> -->
+    <title>Admin Panel</title>
+    <style>
+        @font-face {
+            font-family: 'luchador-oblique';
+            src: url(../Font/luchador-oblique.ttf);
+        }
+
+        @font-face {
+            font-family: 'luchador-regular';
+            src: url(../Font/Luchador-Regular.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        h1 {
+            color: #FA3B20;
+            position: relative;
+            z-index: 3;
+            margin-top: 15vh;
+            font-family: 'luchador-regular';
+            margin-left: 33%;
+            font-size: 4rem;
+        }
+
+        .btn {
+            background: #01269A;
+            color: white;
+            border-radius: 50px;
+            padding: 8px 20px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            color: #01269A;
+            background: white;
+            padding: 6px 18px;
+            border: 2px solid #01269A;
+        }
+
+        .brand {
+            color: white;
+            font-family: 'luchador-regular';
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 0 20px 0 20px;
+            border: 2px solid white;
+            padding: 10px 20px;
+        }
+
+        .brand:hover {
+            color: #01269A;
+            font-family: 'luchador-regular';
+            text-decoration: none;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 0 20px 0 20px;
+            border: 2px solid white;
+            padding: 10px 20px;
+        }
+
+        .side-menu {
+            position: fixed;
+            background: #01269A;
+            width: 20vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side-menu .brand-name {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .side-menu li {
+            font-size: 18px;
+            padding: 10px 40px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .side-menu li:hover {
+            background: white;
+            color: #01269A;
+            border-radius: 50px;
+            transition: .5s ease-in;
+        }
+
+        .container {
+            position: absolute;
+            right: 0;
+            width: 80vw;
+            height: 100vh;
+            /* background: #01269A; */
+        }
+
+        .container .header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80vw;
+            height: 10vh;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .container .header .nav {
+            width: 90%;
+            display: flex;
+            align-items: center;
+        }
+
+        .container .header .nav .search {
+            flex: 3;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+
+        }
+
+        .container .header .nav .search input[type=text] {
+            border: none;
+            background: #f1f1f1;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 50px;
+            width: 50%;
+        }
+
+        .container .header .nav .search button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            display: flex;
+            border-radius: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .header .nav .search button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .container .header .nav .user {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container .header .nav .user img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .container .header .nav .user .img-case {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+
+        .container .header .nav .user .img-case img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <a class="brand" href="../index.html">BARBECUE</a>
+        </div>
+        <ul>
+            <li><img src="../image/dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>
+            <li><img src="../image/reading-book (1).png" alt="">&nbsp;<span>Nutritions</span> </li>
+            <li><img src="../image/teacher2.png" alt="">&nbsp;<span>Orders</span> </li>
+            <li><img src="../image/payment.png" alt="">&nbsp;<span>Income</span> </li>
+            <li><img src="../image/school.png" alt="">&nbsp;<span>History</span> </li>
+            <li><img src="../image/help-web-button.png" alt="">&nbsp; <span>Help</span></li>
+            <li><img src="../image/settings.png" alt="">&nbsp;<span>Settings</span> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="../image/search.png" alt=""></button>
+                </div>
+                <div class="user">
+                    <img src="../image/notifications.png" alt="">
+                    <div class="img-case">
+                        <img src="../image/user.png" alt="">
+                    </div>
+                    <a href="../html/orderNow.html" class="btn">Sign-out</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>Nutritions</h1>
+            <form action=""></form>
+        </div>
+    </div>
+</body>
