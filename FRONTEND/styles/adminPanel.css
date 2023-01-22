@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'luchador-oblique';
+    src: url(../Font/luchador-oblique.ttf);
+}
+
+@font-face {
+    font-family: 'luchador-regular';
+    src: url(../Font/Luchador-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    color: #444;
+}
+
+h3 {
+    color: #999;
+}
+
+.btn {
+    background: #01269A;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.btn:hover {
+    color: #01269A;
+    background: white;
+    padding: 6px 18px;
+    border: 2px solid #01269A;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+.brand {
+    color: white;
+    font-family: 'luchador-regular';
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 20px 0 20px;
+    border: 2px solid white;
+    padding: 10px 20px;
+}
+
+.brand:hover {
+    color: #01269A;
+    font-family: 'luchador-regular';
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 0 20px 0 20px;
+    border: 2px solid white;
+    padding: 10px 20px;
+}
+
+table {
+    padding: 10px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+.side-menu {
+    position: fixed;
+    background: #01269A;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-menu li {
+    font-size: 18px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu li:hover {
+    background: white;
+    color: #01269A;
+    border-radius: 50px;
+    transition: .5s ease-in;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #01269A;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .nav .search {
+    flex: 3;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.container .header .nav .search input[type=text] {
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    width: 50%;
+}
+
+.container .header .nav .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header .nav .search button img {
+    width: 30px;
+    height: 30px;
+}
+
+.container .header .nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header .nav .user img {
+    width: 40px;
+    height: 40px;
+}
+
+.container .header .nav .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.container .header .nav .user .img-case img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+
+.container .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px 20px 5px 20px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container .content .content-2 .recent-payments {
+    min-height: 50vh;
+    flex: 3.5;
+    background: white;
+    margin: 0 0px 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .content-2 .new-students {
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    border-radius: 20px;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .content-2 .new-students table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+
+    .side-menu {
+        align-items: center;
+    }
+
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .side-menu li:hover {
+        background: #01269A;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+
+    .container .content .cards {
+        justify-content: center;
+    }
+
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table td:nth-child(2) {
+        display: none;
+    }
+}
