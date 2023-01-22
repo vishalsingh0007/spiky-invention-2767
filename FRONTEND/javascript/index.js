@@ -1,8 +1,8 @@
 // =================================Creating login=====================================
 
 // function just_clicked() {
-
 let login_value = document.getElementById('login_btn');
+console.log(login_value)
 login_value.addEventListener("click", async function (event) {
     event.preventDefault()
     let email = document.getElementById('loginName');
@@ -12,7 +12,6 @@ login_value.addEventListener("click", async function (event) {
         email: email.value,
         password: password.value,
     };
-
     // console.log()
     console.log(userObj);
 
@@ -21,7 +20,6 @@ login_value.addEventListener("click", async function (event) {
         headers: {
             "Content-Type": "application/json",
         },
-
         body: JSON.stringify(userObj),
     }).then((res) => {
         return res.json();
@@ -29,12 +27,10 @@ login_value.addEventListener("click", async function (event) {
         console.log(data);
         localStorage.setItem('Token', data.token)
         alert(data.Message)
-        window.location.href = 'afterlogin.html'
+        window.location.href = '../html/afterlogin.html'
     }).catch((error) => {
         console.log({ 'error': error })
     })
-
-
 });
 
 // }
@@ -73,9 +69,6 @@ registeration_form.addEventListener('click', async (event) => {
     }).catch((error) => {
         console.log({ 'error': error })
     })
-
 })
-
-
 
 // }

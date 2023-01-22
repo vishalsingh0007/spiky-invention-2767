@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Food</title>
+    <style>
+        @font-face {
+            font-family: 'luchador-oblique';
+            src: url(../Font/luchador-oblique.ttf);
+        }
+
+        @font-face {
+            font-family: 'luchador-regular';
+            src: url(../Font/Luchador-Regular.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .upper-nav {
+            height: 40px;
+            width: 100%;
+        }
+
+        ul {
+            background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 1rem 1rem 1rem;
+            border: 2px solid black;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            font-family: 'luchador-regular';
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .top-cover-image>img {
+            width: 100%;
+            margin-top: 0.9rem;
+            height: 100vh;
+        }
+
+        .onee {
+            font-size: 2rem;
+            position: absolute;
+            top: 40%;
+            left: 35%;
+            text-align: center;
+        }
+
+        .cover-image {
+            width: 100%;
+            position: relative;
+        }
+
+        .cover-image img {
+            width: 100%;
+        }
+
+
+        .onee h1 {
+            font-family: 'luchador-regular';
+            margin: 0.5rem;
+            color: #00269a;
+        }
+
+        .onee p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .onee a {
+            font-size: 1.4rem;
+            padding: 1rem 2rem;
+            background-color: #00269a;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .two {
+            font-size: 1.4rem;
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            text-align: center;
+        }
+
+        .two h1,
+        .below-ke-inner-text h1 {
+            font-family: 'luchador-regular';
+            margin: 0.5rem;
+            color: #00269a;
+        }
+
+        .two p,
+        .below-ke-inner-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .two a {
+            font-size: 1.4rem;
+            padding: 1rem 2rem;
+            background-color: #00269a;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: grid;
+            text-align: center;
+            background-color: #f8f8f8;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+
+        .twoo {
+            padding: 25% 0 0 0%;
+        }
+
+        .twoo h1 {
+            font-size: 2rem;
+            font-family: 'luchador-regular';
+        }
+
+        .twoo p {
+            font-size: 1.2rem;
+            margin: 1rem 0 2rem 0;
+        }
+
+        .twoo a {
+            padding: 1rem 2rem;
+            background-color: #01269A;
+            border-radius: 50px;
+            color: white;
+            font-family: 'luchador-regular';
+            text-decoration: none;
+        }
+
+        .one img {
+            width: 100%;
+            margin-left: -12rem;
+            background-color: white;
+        }
+
+        .grid {
+            display: grid;
+            text-align: center;
+            background-color: #f8f8f8;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .first img {
+            width: 100%;
+            /* cursor: pointer; */
+        }
+
+        .first>:last-child {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            font-size: 2rem;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="upper-nav">
+        <ul>
+            <li><a href="">ALL</a></li>
+            <li><a href="">BURRITOS</a></li>
+            <li><a href="">FAMILY DINNERS</a></li>
+            <li><a href="">CHICKEN MEALS</a></li>
+            <li><a href="">FIRE GRILLED COMBOS</a></li>
+            <li><a href="">TOSTADAS</a></li>
+            <li><a href="">BOWLS</a></li>
+            <li><a href="">POLLO FIT MENU</a></li>
+            <li><a href="">STREET TACOS</a></li>
+            <li><a href="">CATERING</a></li>
+        </ul>
+    </div>
+
+    <div class="cover-image-upper">
+        <div class="onee" style="margin-top: 4rem;">
+            <h1><i style="color: white; margin-left: -18rem;">Our Fire-Grilled Food Menu</i></h1>
+        </div>
+        <div class="top-cover-image">
+            <img src="../image/hero.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="twoo">
+            <h1>Fire-Grilled <br> Combos</h1>
+            <p>At participating restaurants for a limited time only.
+            </p>
+            <a href="">TRY ALL 4!</a>
+
+        </div>
+        <div class="one"><img src="../image/chips.jpeg" alt=""></div>
+    </div>
+
+    <div class="grid">
+        <div class="first">
+            <a href=""><img src="../image/M3-DblChickenTostada-1160x870.jpeg" alt=""></a>
+            <div>
+                <p>BURRITOS</p>
+                <span>></span>
+            </div>
+        </div>
+        <div class="first">
+            <a href=""><img src="../image/M3-DblChickenTostada-1160x870.jpeg" alt=""></a>
+            <div>
+                <p>BURRITOS</p>
+                <span>></span>
+            </div>
+        </div>
+        <div class="first">
+            <a href=""><img src="../image/M3-DblChickenTostada-1160x870.jpeg" alt=""></a>
+            <div>
+                <p>BURRITOS</p>
+                <span>></span>
+            </div>
+        </div>
+        <div class="first">
+            <a href=""><img src="../image/M3-DblChickenTostada-1160x870.jpeg" alt=""></a>
+            <div>
+                <p>BURRITOS</p>
+                <span>></span>
+            </div>
+        </div>
+        <div class="first">
+            <a href=""><img src="../image/M3-DblChickenTostada-1160x870.jpeg" alt=""></a>
+            <div>
+                <p>BURRITOS</p>
+                <span>></span>
+            </div>
+        </div>
+        <div class="first">
+            <a href=""><img src="../image/M3-DblChickenTostada-1160x870.jpeg" alt=""></a>
+            <div>
+                <p>BURRITOS</p>
+                <span>></span>
+            </div>
+        </div>
+        <div class="first">
+            <a href=""><img src="../image/M3-DblChickenTostada-1160x870.jpeg" alt=""></a>
+            <div>
+                <p>BURRITOS</p>
+                <span>></span>
+            </div>
+        </div>
+        <div class="first">
+            <a href=""><img src="../image/M3-DblChickenTostada-1160x870.jpeg" alt=""></a>
+            <div>
+                <p>BURRITOS</p>
+                <span>></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cover-image">
+        <div class="onee">
+            <h1><i>OUR FOOD</i></h1>
+            <p>Steeped in tradition. Filled with freshness. Our <br> menu is the intersection of our Sinaloan
+                roots
+                and <br>
+                our SoCal hometown.</p>
+            <a href="£">VIEW MENU</a>
+        </div>
+        <div>
+            <img src="../image/our-food_1280.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="cover-image">
+        <div class="onee">
+            <h1><i>Add Pollo to <br> Your Party</i></h1>
+            <p>Our famous fire-grilled chicken is a tradition worth <br> sharing. Bring your guests together over
+                pollo <br>
+                and enjoy like family.</p>
+            <a href="£">VIEW MENU</a>
+        </div>
+        <div>
+            <img src="../image/catering_1280.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="cover-image">
+        <div class="two">
+            <h1><i>Perfect pollo is <br> just a click <br> away</i></h1>
+            <p>Order online for quick pick up or delivery where <br> available.</p>
+            <a href="£">ORDER NOW</a>
+        </div>
+        <div>
+            <img src="../image/order-now_1280.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

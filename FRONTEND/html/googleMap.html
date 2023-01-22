@@ -21,9 +21,8 @@
             /* justify-content: space-between; */
         }
 
-
-        .google-map>:first-child {
-            width: 40%;
+        nav {
+            height: 70px;
         }
 
         hr {
@@ -35,28 +34,44 @@
             margin-left: 0.1rem;
         }
 
+        .google-map>:first-child {
+            width: 30%;
+            margin: 1rem;
+            margin-bottom: 2rem;
+            /* height: 200px; */
+        }
+
+        .google-map-link {
+            width: 140%;
+        }
+
+        .google-map>:first-child>:first-child>input {
+            padding: 1rem 1rem 1rem 1rem;
+            width: 90%;
+            height: 20px;
+            font-size: 20px;
+            border-radius: 50px;
+            border: none;
+        }
 
         .google-map>:first-child>:first-child {
             border: 2px solid grey;
-            width: 90%;
-            margin-left: 1.4rem;
+            width: 70%;
+            margin-left: 2.5rem;
             display: flex;
+            padding: 1rem 1rem 1rem 1rem;
             /* gap: 1rem; */
             align-items: center;
             border-radius: 50px;
             margin-top: 2rem;
         }
 
-        .google-map>:first-child>:first-child>input {
-            padding: 1rem 1rem;
-            font-size: 20px;
-            width: 90%;
-            border-radius: 50px;
-            border: none;
-        }
-
         .google-map>:last-child {
             width: 70%;
+        }
+
+        .icon {
+            margin-top: -1rem;
         }
 
         @media(max-width: 767px) {
@@ -104,7 +119,31 @@
 
 <body>
     <nav>
-        <div><i style="color: red; font-size: 2rem; padding-left: 1.5rem;" class="fa-solid fa-bars"></i></div>
+        <div>
+            <label>
+                <input type="checkbox">
+                <div class="toggle">
+                    <span class="top_line common"></span>
+                    <span class="middle_line common"></span>
+                    <span class="bottom_line common"></span>
+                </div>
+
+
+                <div class="slider">
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="">OUR FOOD</a></li>
+                        <li><a href="">CATERING</a></li>
+                        <li><a href="../html/loco_rewards.html">LOCO REWARDS</a></li>
+                        <li><a href="../html/giftcard.html">GIFT CARDS</a></li>
+                        <li><a href="">THIS IS L.A MAX</a></li>
+                        <li><a href="">OUR STORY</a></li>
+                        <li><a href="">CAREERS</a></li>
+                        <li><a href="">FRANCHISING</a></li>
+                    </ul>
+                </div>
+        </div>
+        <!-- <div><i style="color: red; font-size: 2rem; padding-left: 1.5rem;" class="fa-solid fa-bars"></i></div> -->
         <div class="icon">
             <div class="barbecue-logo-upper-text">
                 <p class="barbecue-logo-upper-text-para">BARBECUE</p>
@@ -122,7 +161,7 @@
     <div class="google-map">
         <div>
             <div>
-                <input type="text" placeholder="Enter city, address or zip">
+                <input type="text" placeholder="Enter your city name here" name="" id="">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
