@@ -199,6 +199,75 @@
             width: 100%;
             height: 100%;
         }
+
+        form {
+            padding: 16px;
+            width: 100%;
+            margin-top: 2rem;
+            /* margin: 0 auto; */
+            display: flex;
+            align-items: center;
+        }
+
+        form>div {
+            width: 50%;
+            padding: 0 1rem 0 1rem;
+        }
+
+        input {
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -0.2px;
+            border: 0;
+            outline: 0;
+            font-size: 16px;
+            border-radius: 320px;
+            padding: 16px;
+            background-color: #EBECF0;
+            text-shadow: 1px 1px 0 #fff;
+            margin-right: 8px;
+            box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #fff;
+            width: 98%;
+            box-sizing: border-box;
+            transition: all 0.2s ease-in-out;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        input:focus {
+            box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 24px;
+            width: 100%;
+        }
+
+        .btnn {
+            background: #01269A;
+            color: white;
+            font-size: 1rem;
+            border-radius: 50px;
+            padding: 1rem 8rem;
+            cursor: pointer;
+            margin-left: 1.4rem;
+            text-align: center;
+        }
+
+        .btnn:hover {
+            color: #01269A;
+            background: white;
+            padding: 1rem 8rem;
+            border: 2px solid #01269A;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: #01269A;
+        }
     </style>
 </head>
 
@@ -208,13 +277,14 @@
             <a class="brand" href="../index.html">BARBECUE</a>
         </div>
         <ul>
-            <li><img src="../image/dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>
-            <li><img src="../image/reading-book (1).png" alt="">&nbsp;<span>Nutritions</span> </li>
-            <li><img src="../image/teacher2.png" alt="">&nbsp;<span>Orders</span> </li>
-            <li><img src="../image/payment.png" alt="">&nbsp;<span>Income</span> </li>
-            <li><img src="../image/school.png" alt="">&nbsp;<span>History</span> </li>
-            <li><img src="../image/help-web-button.png" alt="">&nbsp; <span>Help</span></li>
-            <li><img src="../image/settings.png" alt="">&nbsp;<span>Settings</span> </li>
+            <li><img src="../image/dashboard (2).png" alt="">&nbsp; <a href="../html/adminpage.html">Dashboard</a> </li>
+            <li><img src="../image/reading-book (1).png" alt="">&nbsp;<a href="../html/adminNutro.html">Nutritions</a>
+            </li>
+            <li><img src="../image/teacher2.png" alt="">&nbsp;<a href="">Orders</a> </li>
+            <li><img src="../image/payment.png" alt="">&nbsp;<a href="">Income</a> </li>
+            <li><img src="../image/school.png" alt="">&nbsp; <a href="">History</a> </li>
+            <li><img src="../image/help-web-button.png" alt="">&nbsp; <a href="">Help</a></li>
+            <li><img src="../image/settings.png" alt="">&nbsp;<a href="">Settings</a> </li>
         </ul>
     </div>
     <div class="container">
@@ -229,13 +299,64 @@
                     <div class="img-case">
                         <img src="../image/user.png" alt="">
                     </div>
-                    <a href="../html/orderNow.html" class="btn">Sign-out</a>
+                    <a href="../do not touch/admin.html" class="btn">Sign-out</a>
                 </div>
             </div>
         </div>
         <div>
             <h1>Nutritions</h1>
-            <form action=""></form>
+            <form action="">
+                <div>
+                    <label>
+                        <input id="Serving_size" type="text" placeholder="Serving size" />
+                    </label>
+                    <label>
+                        <input id="Calories" type="text" placeholder="Calories" />
+                    </label>
+                    <label>
+                        <input id="Calories_from_fat" type="text" placeholder="Calories_from_fat" />
+                    </label>
+                    <label>
+                        <input id="Total_fat" type="text" placeholder="Total fat" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input id="Saturated_fat" type="text" placeholder="Saturated fat" />
+                    </label>
+                    <label>
+                        <input id="Trans_fat" type="text" placeholder="Trans fat" />
+                    </label>
+                    <label>
+                        <input id="Cholesterol" type="text" placeholder="Cholesterol" />
+                    </label>
+                    <label>
+                        <input id="Protein" type="text" placeholder="Protein" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input id="Carbohydrates" type="text" placeholder="Carbohydrates" />
+                    </label>
+                    <label>
+                        <input id="Sodium" type="text" placeholder="Sodium" />
+                    </label>
+                    <label>
+                        <input id="title" type="text" placeholder="title" />
+                    </label>
+                    <label>
+                        <input id="identity" type="text" placeholder="Product ID For UPDATE/DELETE" />
+                    </label>
+                </div>
+            </form>
+            <div>
+                <button id="submit" onclick="getDetails()" class="btnn">Submit</button>
+                <button id="update" class="btnn">Update</button>
+                <button id="delete" class="btnn">Delete</button>
+            </div>
         </div>
     </div>
 </body>
+<script src="../javascript/nutro.js"></script>
+
+</html>
