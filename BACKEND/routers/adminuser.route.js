@@ -1,29 +1,27 @@
 const express = require('express');
-const { userModel } = require('../models/user.model');
-const userRouter = express.Router();
+const { AdminModel } = require('../models/adminUser.model');
+const adminRouter = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-userRouter.get('/', async (req, res) => {
+adminRouter.get('/', async (req, res) => {
     try {
-        const data = await userModel.find();
+        const data = await AdminModel.find();
         res.send(data);
     } catch (error) {
         console.log({ 'error': error });
         console.log('Something went wrong');
     }
-
-
 })
 
-userRouter.post('/register', async (req, res) => {
+adminRouter.post('/register', async (req, res) => {
     let { username, password, repeat_password, name, email } = req.body;
     try {
         if (password != repeat_password) {
             res.send({ "Message": 'Your password is not matching' });
             return;
         }
-        let data = await userModel.find({ email });
+        let data = await AdminModel.find({ email });
         if (data.length > 0) {
             res.send({ "Message": "Your email address is already resgistered" });
         } else {
@@ -31,7 +29,7 @@ userRouter.post('/register', async (req, res) => {
                 if (err) {
                     console.log({ 'err': err })
                 } else {
-                    const data = new userModel({ username, password: secure_password, name, email });
+                    const data = new AdminModel({ username, password: secure_password, name, email });
                     await data.save()
                     res.send({ "Message": `${data.name} has successfully created` });
                     console.log(data);
@@ -44,10 +42,10 @@ userRouter.post('/register', async (req, res) => {
     }
 });
 
-userRouter.post('/login', async (req, res) => {
+adminRouter.post('/login', async (req, res) => {
     const { email, password } = req.body;
     try {
-        const data = await userModel.find({ email });
+        const data = await AdminModel.find({ email });
         if (data.length > 0) {
             bcrypt.compare(password, data[0].password, function (err, result) {
                 if (err) {
@@ -68,4 +66,4 @@ userRouter.post('/login', async (req, res) => {
     }
 })
 
-module.exports = { userRouter }
+module.exports = { adminRouter }
