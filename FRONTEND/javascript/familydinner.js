@@ -78,7 +78,7 @@ async function Fetch_all_whole_data() {
 Fetch_all_whole_data();
 
 function display_data(data) {
-    let below_div = document.querySelector('.containerr');
+    let below_div = document.querySelector('.containerrr');
     below_div.innerHTML = '';
     let allData = data.map((item) => {
         let categoryName = item.category.toLowerCase()
