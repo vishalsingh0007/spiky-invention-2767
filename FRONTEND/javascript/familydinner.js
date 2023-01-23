@@ -78,11 +78,13 @@ async function Fetch_all_whole_data() {
 Fetch_all_whole_data();
 
 function display_data(data) {
+    // let value = data
     let below_div = document.querySelector('.containerrr');
     below_div.innerHTML = '';
     let allData = data.map((item) => {
         let categoryName = item.category.toLowerCase()
-        if (item.category == categoryName) {
+        console.log(categoryName)
+        if (categoryName == 'BURRITOS') {
             return `<div class="one">
         <img src="../image/M1-BeefGrillerswDip-761x561.jpeg" alt="">
         <h1>${item.title}</h1>
@@ -132,7 +134,9 @@ function display_data(data) {
                             <p>${item.Sodium}g</p>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>`
@@ -140,7 +144,7 @@ function display_data(data) {
 
     }).join('');
     console.log(allData);
-    below_div.innerHTML = allData;
+    // below_div.innerHTML = allData;
 
     let all_delete_btn = document.querySelectorAll("#delete");
     for (let btn of all_delete_btn) {
