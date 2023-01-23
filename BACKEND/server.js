@@ -14,7 +14,7 @@ app.use(cors());
 app.use('/users', userRouter);
 app.use('/admins', adminRouter);
 app.use('/nutros', nutroRouter);
-app.use(authenticate);
+// app.use(authenticate);
 
 app.listen(process.env.port, async () => {
     try {

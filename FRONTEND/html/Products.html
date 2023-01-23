@@ -116,28 +116,93 @@
             align-items: center;
             justify-content: space-between;
         }
+
+        button {
+            padding: 1rem 2rem;
+            background-color: #00269a;
+            color: white;
+            font-size: 1rem;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            /* border: 2px solid black; */
+        }
     </style>
 </head>
 
 <body>
     <div class="heading">
-        <h1>BURRITOS</h1>
+        <h1>PRODUCTS</h1>
     </div>
     <div class="containerr">
         <!-- <a href="../html/burritos.html"></a> -->
+        <!-- <div class="one">
+            <img src="../image/M1-BeefGrillerswDip-761x561.jpeg" alt="">
+            <h1>${item.title}</h1>
+            <div class="upper_div" onclick="open_nutro_pop()">
+                <p>Nutrition info</p>
+                <div class="putHere">
+                    <div class="lower_div">
+                        <div>
+                            <h1>Nutritions Info</h1>
+                            <a href=""><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <div class="nutrition_pop_upper_div">
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Serving size</h1>
+                                <p>${item.Serving_size} oz</p>
+                            </div>
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Cholesterol</h1>
+                                <p>${item.Cholesterol}</p>
+                            </div>
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Calories from fat</h1>
+                                <p>${item.Calories_from_fat}</p>
+                            </div>
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Total fat</h1>
+                                <p>${item.Total_fat}g</p>
+                            </div>
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Saturated fat</h1>
+                                <p>${item.Saturated_fat}g</p>
+                            </div>
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Trans fat</h1>
+                                <p>${item.Trans_fat}g</p>
+                            </div>
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Protein</h1>
+                                <p>${item.Protein}g</p>
+                            </div>
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Carbohydrates</h1>
+                                <p>${item.Carbohydrates}g</p>
+                            </div>
+                            <div class="nutrition_pop_inner_div">
+                                <h1>Sodium</h1>
+                                <p>${item.Sodium}g</p>
+                            </div>
+                            <div>
+                                <h1>Sodium</h1>
+                                <p>${item.Sodium}g</p>
+                                <button style="padding: 1rem 2rem; background-color: #00269a;" id="update"
+                                    data-id="${item._id}">update</button>
+                                <button id="delete" data-id="${item._id}">delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div> -->
+
     </div>
-    <div class="cover-image">
-        <div class="two">
-            <h1><i>Perfect pollo is <br> just a click <br> away</i></h1>
-            <p>Order online for quick pick up or delivery where <br> available.</p>
-            <a href="../html/orderNow.html">ORDER NOW</a>
-        </div>
-        <div>
-            <img src="../image/order-now_1280.jpg" alt="">
-        </div>
-    </div>
+
 </body>
-<script src="../javascript/nutro.js"></script>
+<script src="../javascript/admin.js"></script>
 <script>
     function open_nutro_pop() {
         let flag = true;

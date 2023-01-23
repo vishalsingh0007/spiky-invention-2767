@@ -95,7 +95,7 @@ function display_data(data) {
     let below_div = document.querySelector('.containerr');
     below_div.innerHTML = '';
     let allData = data.map((item) => {
-        let categoryName = item.category.toUpperCase()
+        // let categoryName = item.category.toUpperCase()
         // console.log(categoryName)
         // if (categoryName == below_div.toUpperCase()) {
         return `<div class="one">
@@ -146,6 +146,11 @@ function display_data(data) {
                             <h1>Sodium</h1>
                             <p>${item.Sodium}g</p>
                         </div>
+                        <div class="nutrition_pop_inner_div">
+                        <button style="padding: 1rem 2rem; background-color: #00269a;" id="update"
+                        data-id="${item._id}">update</button>
+                        <button id="delete" data-id="${item._id}">delete</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,8 +165,8 @@ function display_data(data) {
     let all_delete_btn = document.querySelectorAll("#delete");
     for (let btn of all_delete_btn) {
         btn.addEventListener("click", (event) => {
-            // let data_id = event.target.dataset.id;
-            let data_id = data._id;
+            let data_id = event.target.dataset.id;
+            // let data_id = data._id;
             console.log(data_id);
             // console.log(btn.dataset.id);
             DeleteBtn(data_id);
